@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Programming Workshop</title>
+</head>
+<body>
+    <header>
+        <h1>CSF3133 Course Feedback</h1>
+    </header> <!--given code </head>-->
+    <nav>
+        <a href="#results">Results</a> | <a href="#form">Feedback Form</a>
+    </nav>
+    <section id="results">
+        <h2>Feedback Summary</h2>
+        <table border="1">
+<tr>
+    <th>Week</th>
+    <th>Topic</th>
+    <td>Rating</td>
+</tr>
+<tr>
+    <td>1</td>
+    <td>Introduction to HTML</td>
+    <td>4.5</td>
+</tr><!--given code have no </tr>-->
+    <tr><!--TASK 5-->
+ <td>2</td>
+  <td colspan="3">Tables and Forms</td>
+ </tr>
+ <tr>
+ <td>3</td>
+ <td>Semantic HTML</td><!--given code:<td>Semantic HTML<td>4.0</td>
+ -->
+ <td>4.0</td>
+ </tr>
+ <tr>
+    <td>4</td>
+    <td rowspan="2">Mini Project</td><!--TASK 5-->
+    <td>4.5</td>
+ </tr>
+    <td>5</td>
+    <td>4.0</td>
+  </tr>
+  <tr><!--TASK 5-->
+       <td colspan="2">Average Rating</td>
+     </tr>
+    </table>
+</section>
+
+<section id="form">
+    <h2>Give Your Feedback</h2>
+    <form action="submit_feedback.php" method="post">
+        <!-- given code: "rethod" is incorrect.
+             The correct attribute is method="post". -->
+
+        <label for="name">Name:</label>
+        <input type="text" id="fullname" name="name"><br>
+
+        <label>Overall rating:</label><br>
+
+        <input type="radio" id="good" name="good" value="good">
+        <label for="good">Good</label>
+<!-- TASK 6: Add radio buttons for overall rating -->
+         <input type="radio" id="average" name="rating" value="average">
+        <label for="average">Average</label><br>
+
+        <input type="radio" id="poor" name="poor" value="poor">
+        <!-- given code: Radio buttons have
+             different name values. Both must use name="rating"
+             so only one option can be selected. -->
+        <label for="poor">Poor</label><br>
+
+        <input type="checkbox" id="lab" name="labs">
+        <label for="labs">I attended all labs</label><br>
+        <!-- given code: Checkbox id="lab" does not
+             match label for="labs". Make both values identical. -->
+
+         <label for="email">Email:</label>
+         <input type="email" id="email" name="email">  
+           <!--TASK 6: TOPIC I WANT TO PRACTICE MORE-->
+         <p>Topics I want more practice on:</p>
+
+<input type="checkbox" id="html" name="topics" value="HTML">
+<label for="html">HTML</label>
+
+<input type="checkbox" id="css" name="topics" value="CSS">
+<label for="css">CSS</label>
+
+<input type="checkbox" id="javascript" name="topics" value="JavaScript">
+<label for="javascript">JavaScript</label><br>
+
+<label for="group">Section/Group:</label>
+<!--TASK 6: Add a dropdown menu for section/group selection -->
+<select id="group" name="group">
+    <option value="">Select</option>
+    <option value="A">Group A</option>
+    <option value="B">Group B</option>
+    <option value="C">Group C</option>
+</select><br>
+
+        <input type="submit" value="Submit"><br>
+
+    </form>
+</section>
+<!--semantic HTML:COMMENTS-->
+<section id="comments">
+    <h2>Student Comments</h2>
+
+    <article>
+        <h3>Ali</h3>
+        <p>I enjoy learning HTML because it is easy to understand.</p>
+    </article>
+
+    <article>
+        <h3>Siti</h3>
+        <p>I want more practice with CSS and website design.</p>
+    </article>
+</section>
+
+<footer>
+    <p>Copyright &copy; 2026 CSF3133</p>
+</footer>
+</body>
+</html>
+
+
