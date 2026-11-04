@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Campus Bakery </title>
+</head>
+<body>
+  <!-- 1. HEADER -->
+    <div id="header">
+        <h1>
+            CampusBake&reg;
+            <span>Freshly Baked with Love!</span>
+        </h1>
+    </div>
+    <!-- 2. NAVIGATION -->
+    <div id="nav">
+        <a href="#home">Home</a> |
+        <a href="#menu">Our Menu</a> |
+        <a href="#order">Order Now</a> |
+        <a href="#contact">Contact Us</a>
+    </div>
+    <!-- 3. CONTENT -->
+    <div id="content">
+
+        <h2 id="home">Welcome to CampusBake!</h2>
+        <p>
+            Welcome to <strong>CampusBake Bakery</strong>,
+            where we serve <em>delicious</em> and
+            <span>freshly baked</span> products every day.
+            <a href="#menu">Explore our menu!</a>
+        </p>
+
+        <h2 id="menu">Our Bakery Menu</h2>
+
+        <ul>
+            <li>Chocolate Cake</li>
+            <li>Strawberry Cupcake</li>
+            <li>Butter Croissant</li>
+            <li>Cheese Bread</li>
+        </ul>
+
+        <h2 id="order">Bakery Order Form</h2>
+        <form>
+
+            <label>Customer Name:</label>
+            <input type="text"
+                   placeholder="Enter your name"
+                   required autofocus>
+            <br><br>
+
+            <label>Phone Number:</label>
+            <input type="tel" required>
+            <br><br>
+
+            <label>Email:</label>
+            <input type="email" required>
+            <br><br>
+
+            <label>Pick-up Date:</label>
+            <input type="date">
+            <br><br>
+
+            <label>Pick-up Time:</label>
+            <input type="time">
+            <br><br>
+
+            <label>Choose Flavour:</label>
+            <input type="text" list="flavours">
+
+            <datalist id="flavours">
+                <option value="Chocolate">
+                <option value="Vanilla">
+                <option value="Strawberry">
+                <option value="Blueberry">
+            </datalist>
+
+            <br><br>
+
+            <label>Icing Colour:</label>
+            <input type="color">
+            <br><br>
+
+            <label>Sweetness Level:</label>
+            <input type="range" min="1" max="5" step="1">
+            <br><br>
+
+            <input type="submit" value="Submit Order">
+
+        </form>
+<!--price calculator-->
+<h2>Price Calculator</h2>
+
+<form oninput="total.value = (cupcakes.value * 3) + (slices.value * 5)">
+
+    <label>Cupcakes (RM 3.00 each):</label>
+    <input type="number" name="cupcakes" id="cupcakes"
+           min="0" value="0">
+    <br><br>
+
+    <label>Cake Slices (RM 5.00 each):</label>
+    <input type="number" name="slices" id="slices"
+           min="0" value="0">
+    <br><br>
+
+    <label>Total Price: RM </label>
+    <output name="total" for="cupcakes slices">0</output>
+
+</form>
+
+    </div>
+
+
+    <!-- 4. SIDEBAR -->
+    <div id="sidebar">
+
+        <h2>Price List</h2>
+
+        <ul>
+            <li>Chocolate Cake slice - RM5</li>
+            <li>Strawberry Cupcake - RM3</li>
+            <li>Butter Croissant - RM2</li>
+            <li>Cheese Bread - RM4</li>
+        </ul>
+
+        <p>Orders &gt; 10 pieces get a free drink!</p>
+        <p>Brand: CampusBake&reg;</p>
+
+    </div>
+
+
+    <!-- 5. FOOTER -->
+    <div id="footer">
+        <h2 id="contact">Contact Us</h2>
+
+        <p>Email: campusbake@gmail.com</p>
+
+        <p>
+        &nbsp; Thank you for visiting CampusBake!
+        </p>
+
+        <p>
+         &copy; 2026 CampusBake. All Rights Reserved.
+        </p>
+
+    </div>
+</body>
+</html>
+<!--when submit empty fields: warning please fill out the field -->
+<!--enter “myemail” in the e-mail field and submit again: error because need @ -->
