@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Interactive Contact Form</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2db;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header Section */
+        .header {
+            background-color: #0c4f92;
+            color: rgba(255, 255, 255, 0.908);
+            text-align: center;
+            padding: 25px;
+        }
+
+        .header span {
+            color: yellow;
+            font-style: italic;
+        }
+
+        /* Content Section */
+        .content {
+            background-color: white;
+            width: 70%;
+            margin: 20px auto;
+            padding: 25px;
+            border-radius: 10px;
+        }
+
+        h2 {
+            color: #234567;
+        }
+
+        input {
+            padding: 8px;
+            margin: 8px 0;
+        }
+
+        button {
+            background-color: #234567;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #456789;
+        }
+
+        /* Footer Section */
+        .footer {
+            background-color: #234567;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <div class="header">
+        <h1>Contact Us</h1>
+        <span>We are happy to hear from you!</span>
+    </div>
+
+    <!-- Content Section -->
+    <div class="content">
+
+        <!-- Contact Form -->
+        <div>
+            <h2>Contact Form</h2>
+
+            <form>
+                <label>Email:</label><br>
+                <input type="email" placeholder="Enter your email" required>
+                <br><br>
+
+                <label>Preferred Contact Date:</label><br>
+                <input type="date" required>
+                <br><br>
+
+                <label>Satisfaction Level:</label><br>
+                <input type="range" min="0" max="100" value="50">
+                <br><br>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+        <hr>
+
+        <!-- Inline Calculator -->
+        <div>
+            <h2>Inline Calculator</h2>
+
+            <label>First Number:</label><br>
+            <input type="number" id="num1" oninput="calculateSum()">
+            <br>
+
+            <label>Second Number:</label><br>
+            <input type="number" id="num2" oninput="calculateSum()">
+            <br>
+
+            <label>Sum:</label>
+            <output id="result">0</output>
+        </div>
+
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer">
+        <p>Contact: info@example.com</p>
+        <p>&copy; 2026 Contact Us. All Rights Reserved.</p>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        function calculateSum() {
+            let num1 = Number(document.getElementById("num1").value);
+            let num2 = Number(document.getElementById("num2").value);
+
+            let sum = num1 + num2;
+
+            document.getElementById("result").value = sum;
+        }
+    </script>
+
+</body>
+</html>
