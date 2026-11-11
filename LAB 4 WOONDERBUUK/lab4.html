@@ -1,0 +1,235 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Exercise 4</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f2f2f2;
+        }
+
+        header {
+            background-color: teal;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        nav {
+            background-color: #333;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav a {
+            display: block;
+            color: white;
+            padding: 15px;
+            text-decoration: none;
+        }
+
+        nav a:visited {
+            color: lightblue;
+        }
+
+        nav a:hover {
+            background-color: teal;
+            text-decoration: underline;
+        }
+
+        nav a:active {
+            background-color: darkcyan;
+        }
+
+        main {
+            width: 90%;
+            margin: 20px auto;
+        }
+
+        section {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+
+        h2 {
+            color: teal;
+        }
+
+        .underline {
+            text-decoration: underline;
+        }
+
+        .overline {
+            text-decoration: overline;
+        }
+
+        .strike {
+            text-decoration: line-through;
+        }
+
+        video {
+            width: 100%;
+            max-width: 600px;
+        }
+
+        form label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input[type="text"],
+        input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        fieldset {
+            margin-top: 15px;
+        }
+
+        button {
+            background-color: teal;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            margin-top: 15px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: darkcyan;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        @media (max-width: 600px) {
+            nav ul {
+                flex-direction: column;
+            }
+
+            nav li {
+                text-align: center;
+            }
+
+            main {
+                width: 95%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header id="home">
+    <h1>My Personal Webpage</h1>
+    <p>Welcome to my HTML5 and CSS webpage!</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#media">Video</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<main>
+
+    <section>
+        <h2>Welcome</h2>
+        <p>This webpage demonstrates HTML5 and CSS concepts.</p>
+    </section>
+
+    <section id="about">
+        <h2>About This Page</h2>
+
+        <article>
+            <h3>Learning HTML5 and CSS</h3>
+            <p>
+                HTML5 is used to structure webpage content
+                while CSS controls its appearance.
+                <span class="underline">Underline</span>,
+                <span class="overline">Overline</span>,
+                <span class="strike">Line-through</span>.
+            </p>
+        </article>
+    </section>
+
+    <section id="media">
+        <h2>Embedded Video</h2>
+
+        <video controls>
+            <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4"
+                    type="video/mp4">
+            Your browser does not support video.
+        </video>
+
+        <p>Caption: A flower moving gently in the breeze.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Student Information Form</h2>
+
+        <form>
+            <label>Name:</label>
+            <input type="text" name="name"
+                   placeholder="Enter your name" required>
+
+            <label>Email:</label>
+            <input type="email" name="email"
+                   placeholder="Enter your email" required>
+
+            <fieldset>
+                <legend>Gender:</legend>
+                <input type="radio" name="gender" value="Male" required>
+                Male
+
+                <input type="radio" name="gender" value="Female">
+                Female
+            </fieldset>
+
+            <fieldset>
+                <legend>Favorite Hobbies:</legend>
+                <input type="checkbox" name="hobby" value="Reading">
+                Reading
+
+                <input type="checkbox" name="hobby" value="Sports">
+                Sports
+
+                <input type="checkbox" name="hobby" value="Music">
+                Music
+            </fieldset>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 My Personal Webpage</p>
+</footer>
+
+</body>
+</html>
+
