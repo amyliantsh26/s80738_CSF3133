@@ -1,0 +1,161 @@
+body {font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fcf8f3;
+    
+}
+
+section {
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 15px;
+    background-color: #ffffff;
+    border: 1px solid #e0d5c8;
+    border-radius: 5px;
+}
+
+/* Navigation Bar Styling (Moved from internal CSS & extended) */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #6f4e37;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    display: inline-block;
+    background-color: #6f4e37;
+    padding: 12px 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Link States in Correct LVHA Order */
+a:link {
+    color: #1A5276;
+}
+
+a:visited {
+    color: #7D3C98;
+}
+
+a:hover {
+    color: #E67E22;
+}
+
+a:active {
+    color: #C0392B;
+}
+
+/* Navigation Bar Link Color & Hover Background */
+nav a:link {
+    color: #ffffff;
+}
+
+nav a:visited {
+    color: #f5cba7;
+}
+
+nav a:hover {
+    color: #ffffff;
+    background-color: #a0522d;
+}
+
+nav a:active {
+    color: #ffd700;
+}
+
+/* Menu Item & Promotion Old Price Styling */
+.item {
+    border-bottom: 1px dashed #cccccc;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #777777;
+    margin-right: 6px;
+}
+
+/* Responsive Video & Caption Styling */
+figure {
+    margin: 0;
+    text-align: center;
+}
+
+video {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #6f4e37;
+}
+
+figcaption {
+    margin-top: 8px;
+    font-style: italic;
+    color: #555555;
+}
+
+/* Feedback Form Styling */
+.feedback-form {
+    background-color: #fdf2e9;
+    padding: 20px;
+    border: 1px solid #d35400;
+    border-radius: 5px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.feedback-form input[type="text"],
+.feedback-form input[type="email"] {
+    width: 95%;
+    padding: 8px;
+    margin-top: 4px;
+    border: 1px solid #bbbbbb;
+}
+
+.btn-submit {
+    background-color: #6f4e37;
+    color: #ffffff;
+    padding: 10px 18px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-submit:hover {
+    background-color: #a0522d;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #3e2723;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+    margin-top: 25px;
+}
+
+footer p {
+    color: #ffffff;
+    text-align: center;
+}
+
+footer a:link {
+    color: #f5cba7;
+}
+
+footer a:visited {
+    color: #d7bde2;
+}
+
+footer a:hover {
+    color: #E67E22;
+}

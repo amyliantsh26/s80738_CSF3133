@@ -1,0 +1,213 @@
+
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Navigation */
+header {
+    background-color: #004d5a;
+    padding: 20px 7%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-size: 22px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #ffd166;
+}
+
+/* Hero */
+.hero {
+    height: 550px;
+    background:
+        linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+        url("https://images.unsplash.com/photo-1500375592092-40eb2168fd21")
+        center/cover no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    background-color: #ffd166;
+    color: #004d5a;
+    padding: 14px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* About */
+.about {
+    padding: 70px 15%;
+    text-align: center;
+    background-color: #f0fafa;
+}
+
+.about h2 {
+    color: #006d77;
+    margin-bottom: 25px;
+}
+
+.about p {
+    line-height: 1.8;
+    font-size: 17px;
+}
+
+/* Places */
+.places {
+    padding: 70px 8%;
+    text-align: center;
+}
+
+.places h2 {
+    color: #006d77;
+    margin-bottom: 15px;
+}
+
+.subtitle {
+    margin-bottom: 40px;
+}
+
+.place-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.place-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transition: 0.3s;
+}
+
+.place-card:hover {
+    transform: translateY(-8px);
+}
+
+.place-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.place-info {
+    padding: 20px;
+}
+
+.place-info h3 {
+    color: #006d77;
+    margin-bottom: 12px;
+}
+
+.place-info p {
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+/* Promotion Video */
+.video-section {
+    background-color: #004d5a;
+    color: white;
+    text-align: center;
+    padding: 70px 8%;
+}
+
+.video-section h2 {
+    margin-bottom: 20px;
+}
+
+.video-section p {
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.video-container {
+    max-width: 850px;
+    margin: auto;
+}
+
+.video-container video {
+    width: 100%;
+    border-radius: 12px;
+}
+
+/* Footer */
+footer {
+    background-color: #003640;
+    color: white;
+    text-align: center;
+    padding: 35px;
+    line-height: 2;
+}
+
+/* Responsive */
+@media (max-width: 1000px) {
+    .place-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero-content h1 {
+        font-size: 35px;
+    }
+
+    .place-container {
+        grid-template-columns: 1fr;
+    }
+}
