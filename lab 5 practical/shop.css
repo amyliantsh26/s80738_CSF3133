@@ -1,0 +1,138 @@
+
+/* 1. General Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url("paper.gif");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+/* 2. Header Styling */
+header {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("books.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+header h1 {
+    font-family: 'Merriweather', serif;
+    color: white;
+    text-align: center;
+}
+
+/* 3. Navigation Bar */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Navigation Hover Effect */
+li a:hover {
+    background-color: #111;
+}
+
+/* Active Navigation */
+li a.active {
+    background-color: #04AA6D;
+}
+
+/* 4. Main Content */
+main {
+    width: 90%;
+    max-width: 980px;
+    margin: auto;
+    padding: 20px;
+}
+
+h2 {
+    font-family: 'Merriweather', serif;
+    color: #2646e7;
+}
+
+p {
+    line-height: 1.6;
+}
+
+/* 5. Table Styling */
+#products {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+/* Table Border and Padding */
+#products td,
+#products th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+/* Table Header */
+#products th {
+    background-color: #1b723c;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+/* Alternating Row Colours */
+#products tr:nth-child(even) {
+    background-color: #F2F2F2;
+}
+
+/* Table Hover Effect */
+#products tr:hover {
+    background-color: #ddd;
+}
+
+/* Price Alignment */
+#products .price {
+    text-align: right;
+}
+
+/* Contact Us Section */
+#contact {
+    background-color: #F2F2F2;
+    padding: 20px;
+    margin-top: 25px;
+    border-radius: 5px;
+}
+
+#contact h2 {
+    color: #1B4F72;
+}
+
+#contact p {
+    line-height: 1.8;
+}
+
+
+/* 6. Footer Styling */
+footer {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 10px;
+}
+

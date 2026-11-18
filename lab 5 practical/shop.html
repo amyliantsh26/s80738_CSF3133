@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Campus Bookstore</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="shop.css">
+
+</head>
+
+<body>
+
+    <!--
+    ERROR IDENTIFICATION AND CORRECTION:
+
+    Error 1 (shop.html, Line 7):
+    rel="stylesheets" changed to rel="stylesheet".
+
+    Error 2 (shop.html, Lines 10-12):
+    Style tag was placed inside body instead of head.
+
+    Error 3 (shop.html, Line 13):
+    Navigation list was missing nav element.
+
+    Error 4 (shop.html, Line 18):
+    Incorrect inline CSS syntax color=#1B4F72.
+
+    Error 5 (shop.html, Line 20):
+    Table ID did not match the CSS selector.
+
+    Error 6 (shop.html):
+    Missing header element.
+
+    Error 7 (shop.html):
+    Missing main element.
+
+    Error 8 (shop.html):
+    Missing section elements.
+
+    Error 9 (shop.html):
+    Navigation links needed matching section IDs.
+    -->
+
+    <!-- Header -->
+    <header id="home">
+        <h1>Campus Bookstore</h1>
+        <p>Textbooks, stationery and more for every student.</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li>
+                <a href="#home" class="active">Home</a>
+            </li>
+
+            <li>
+                <a href="#books">Books</a>
+            </li>
+
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Books Section -->
+        <section id="books">
+
+            <h2>Our Products</h2>
+
+            <p>
+                Welcome to Campus Bookstore! We provide textbooks,
+                stationery and gadgets at affordable prices for students.
+            </p>
+
+            <!-- Product Table -->
+            <table id="products">
+
+                <tr>
+                    <th>Item</th>
+                    <th>Category</th>
+                    <th>Price (RM)</th>
+                </tr>
+
+                <tr>
+                    <td>Web Design Basics</td>
+                    <td>Textbook</td>
+                    <td class="price">45.00</td>
+                </tr>
+
+                <tr>
+                    <td>A4 Notebook</td>
+                    <td>Stationery</td>
+                    <td class="price">6.50</td>
+                </tr>
+
+                <tr>
+                    <td>USB Drive 32GB</td>
+                    <td>Gadget</td>
+                    <td class="price">25.00</td>
+                </tr>
+
+                <tr>
+                    <td>Highlighter Set</td>
+                    <td>Stationery</td>
+                    <td class="price">9.90</td>
+                </tr>
+
+            </table>
+
+        </section>
+
+    </main>
+
+<!-- Contact Us Section -->
+<section id="contact">
+    <h2>Contact Us</h2>
+
+    <p>
+        Have any questions? Feel free to contact us.
+        We are happy to help you!
+    </p>
+
+    <p><strong>Email:</strong> campusbookstore@gmail.com</p>
+
+    <p><strong>Phone:</strong> 09-668 8888</p>
+
+    <p><strong>Address:</strong> Campus Bookstore, Kuala Terengganu, Terengganu.</p>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2026 Campus Bookstore. All Rights Reserved.</p>
+</footer>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <p>&copy; 2026 Campus Bookstore</p>
+    </footer>
+
+</body>
+</html>
+
