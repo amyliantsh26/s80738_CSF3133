@@ -1,0 +1,133 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Background and Font */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f5f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+header h1 {
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+
+header p {
+    font-size: 16px;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #006699;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 14px 20px;
+}
+
+/* Navigation Hover Effect */
+nav ul li a:hover {
+    background-color: #111;
+    color: white;
+}
+
+/* Main Content */
+main {
+    width: 85%;
+    margin: 30px auto;
+}
+
+/* Section Styling */
+section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+}
+
+/* Section Heading */
+section h2 {
+    color: #003366;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #006699;
+    padding-bottom: 8px;
+}
+
+/* Paragraph Styling */
+section p {
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+table th {
+    background-color: #003366;
+    color: white;
+    padding: 12px;
+    text-align: center;
+}
+
+table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+/* Table Hover Effect */
+table tr:hover {
+    background-color: #e6f2ff;
+}
+
+/* Contact Link */
+section a {
+    color: #006699;
+    text-decoration: none;
+}
+
+section a:hover {
+    color: #111;
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 18px;
+    margin-top: 30px;
+}
