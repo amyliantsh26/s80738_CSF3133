@@ -1,0 +1,70 @@
+/* General page styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 30px;
+}
+
+/* Main heading */
+h2 {
+    color: #1f5678;
+}
+
+/* Form styling */
+form {
+    background-color: white;
+    padding: 20px;
+    width: 350px;
+    border: 1px solid #ccc;
+}
+
+/* Input styling */
+input {
+    padding: 8px;
+    margin-top: 5px;
+}
+
+/* Button styling */
+button {
+    background-color: #2674a8;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #164765;
+}
+
+/* Result styling */
+#result {
+    font-weight: bold;
+}
+
+/* Table styling */
+table {
+    border-collapse: collapse;
+    margin-top: 15px;
+    width: 350px;
+}
+
+/* Table border and padding */
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Table header */
+th {
+    background-color: #1f5678;
+    color: white;
+}
+
+/* Table rows */
+tr:nth-child(even) {
+    background-color: #e8f2f7;
+}
